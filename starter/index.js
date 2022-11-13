@@ -86,5 +86,16 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
 //Total number of months
-console.log(finances.length);
+console.log("Total Months: " + finances.length);
+
+// Total of Profit/losses
+var total = 0;
+for (var i = 0; i < finances.length; i ++){
+    total = total + (finances[i][1]);
+}
+console.log("Total Profit/Losses = " + total);
+
+
+
