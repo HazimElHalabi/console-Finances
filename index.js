@@ -88,16 +88,19 @@ var finances = [
 ];
 
 //Total number of months
+
 console.log("Total Months: " + finances.length);
 
 // Total of Profit/losses
+
 var total = 0;
 for (var i = 0; i < finances.length; i ++){
     total = total + (finances[i][1]);
 }
-console.log("Total Profit/Losses = " + total);
+console.log("Total Profit/Losses = $" + total);
 
 //Monthly difference
+
 var monthlyChanges = finances[0][1];
 var difference;
 for (var i = 1; i < finances.length; i++) {
@@ -107,14 +110,21 @@ for (var i = 1; i < finances.length; i++) {
 function roundNearest100(num) {
   return Math.round(num / 100) * 100;
 }
-console.log("Average Change = " + Math.round(monthlyChanges/finances.length));
+console.log("Average Change = $" + Math.round(monthlyChanges/finances.length));
 
-//Highest Profit in Monthly Changes
-var highestIncreaseProfits = Math.max(monthlyChanges);
+//Highest Profit in Monthly Changes - Unable to make code work or add date
 
-console.log("Highest Increase In Profits = " + highestIncreaseProfits);
+const highestIncreaseProfits = Math.max(monthlyChanges);
 
-//Lowest Profit in Monthly Changes
-var lowestIncreaseProfits = Math.min(monthlyChanges);
 
-console.log("Lowest Increase In Profits = " + lowestIncreaseProfits);
+console.log("Highest Increase In Profits = $" + highestIncreaseProfits);
+
+//Lowest Profit in Monthly Changes - Unable to make code work or add date
+
+const lowestIncreaseProfits = Math.min(monthlyChanges);
+
+console.log("Lowest Increase In Profits = $" + lowestIncreaseProfits);
+
+
+
+
