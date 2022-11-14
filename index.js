@@ -109,4 +109,12 @@ function roundNearest100(num) {
 }
 console.log("Average Change = " + Math.round(monthlyChanges/finances.length));
 
+//Highest Profit in Monthly Changes
+var highestIncreaseProfits = Math.max(monthlyChanges);
 
+console.log("Highest Increase In Profits = " + highestIncreaseProfits);
+
+//Lowest Profit in Monthly Changes
+var lowestIncreaseProfits = Math.min(monthlyChanges);
+
+console.log("Lowest Increase In Profits = " + lowestIncreaseProfits);
