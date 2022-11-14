@@ -97,5 +97,16 @@ for (var i = 0; i < finances.length; i ++){
 }
 console.log("Total Profit/Losses = " + total);
 
+//Monthly difference
+var monthlyChanges = finances[0][1];
+var difference;
+for (var i = 1; i < finances.length; i++) {
+  difference = finances[i][1] - finances[i-1][1];
+  monthlyChanges = monthlyChanges + difference;
+}
+function roundNearest100(num) {
+  return Math.round(num / 100) * 100;
+}
+console.log("Average Change = " + Math.round(monthlyChanges/finances.length));
 
 
